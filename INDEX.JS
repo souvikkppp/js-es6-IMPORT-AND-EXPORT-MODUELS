@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import calculator, { add, multiply, subtract, divide } from "./calculator.jsx";
+import  { add, multiply, subtract, divide } from "./calculator.jsx";
 //Import the add, multiply, subtract and divide functions
 //from the calculator.js file.
 //If successful, your website should look the same as the Final.png
@@ -11,6 +11,27 @@ ReactDOM.render(
     <li>{multiply(2, 3)}</li>
     <li>{subtract(7, 2)}</li>
     <li>{divide(5, 2)}</li>
+  </ul>,
+  document.getElementById("root")
+);
+
+//////ANOTHER WAY////////
+//////ANOTHER WAY////////
+//////ANOTHER WAY////////
+
+import React from "react";
+import ReactDOM from "react-dom";
+import * AnyName from "./calculator.jsx";// * this for select all
+//Import the add, multiply, subtract and divide functions
+//from the calculator.js file.
+//If successful, your website should look the same as the Final.png
+
+ReactDOM.render(
+  <ul>
+    <li>{AnyName.add(1, 2)}</li>
+    <li>{AnyName.multiply(2, 3)}</li>
+    <li>{AnyName.subtract(7, 2)}</li>
+    <li>{AnyName.divide(5, 2)}</li>
   </ul>,
   document.getElementById("root")
 );
